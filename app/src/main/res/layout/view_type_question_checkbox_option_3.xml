@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout>
+
+    <data>
+
+        <variable
+            name="item"
+            type="com.mulitlevelrecyclerview.Item" />
+    </data>
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/topic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/radio_padding"
+            android:paddingTop="@dimen/radio_padding"
+            android:text="@{item.topic}"
+            android:textColor="@color/topic"
+            android:textSize="@dimen/size_topic"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:id="@+id/linear_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible">
+        <TextView
+            android:id="@+id/question"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/radio_padding"
+            android:paddingTop="@dimen/radio_padding"
+            android:text="@{item.question}"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:id="@+id/note_question"
+            android:layout_width="wrap_content"
+            android:text="@{item.note_question}"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/radio_padding"
+            android:visibility="gone" />
+
+        <CheckBox
+            android:id="@+id/checkbox1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/radio_padding"
+            android:text="@{item.answer1}"
+            android:checked="false"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkbox2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/radio_padding"
+            android:text="@{item.answer2}"
+            android:checked="false"></CheckBox>
+
+        <CheckBox
+            android:id="@+id/checkbox3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:paddingLeft="@dimen/radio_padding"
+            android:text="@{item.answer3}"
+            android:checked="false"></CheckBox>
+        </LinearLayout>
+    </LinearLayout>
+</layout>

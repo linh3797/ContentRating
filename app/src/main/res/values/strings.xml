@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">MulitLevelRecyclerView</string>
+    <string name="action_settings">Settings</string>
+    <string name="Send">Send by PDF</string>
+</resources>
